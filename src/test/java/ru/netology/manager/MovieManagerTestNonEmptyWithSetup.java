@@ -1,6 +1,7 @@
 package ru.netology.manager;
 
 import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.Test;
 
 import ru.netology.domain.MovieItem;
@@ -11,7 +12,7 @@ public class MovieManagerTestNonEmptyWithSetup {
 
     private MovieManager manager = new MovieManager();
 
-    private MovieItem first = new MovieItem(1, 1, "first", "link1", "comedy");
+    private MovieItem first = new MovieItem(1, 1, "first", "link1", "cartoon");
     private MovieItem second = new MovieItem(2, 2, "second", "link2", "drama");
     private MovieItem third = new MovieItem(3, 3, "third", "link3", "horror");
 
