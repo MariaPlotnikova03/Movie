@@ -14,7 +14,7 @@ public class MovieManager {
     private int numberFilms = 10;
     private MovieItem[] items = new MovieItem[0];
 
-    public MovieManager (int numberFilms){
+    public MovieManager(int numberFilms) {
         this.numberFilms = numberFilms;
     }
 
@@ -37,10 +37,21 @@ public class MovieManager {
 
     public MovieItem[] getItems() {
         int resultSize = items.length;
-        if (resultSize > numberFilms){
+        if (resultSize > numberFilms) {
             resultSize = numberFilms;
         }
 
+        MovieItem[] result = new MovieItem[resultSize];
+        // перебираем массив в прямом порядке
+        // но кладём в результаты в обратном
+        for (int i = 0; i < result.length; i++) {
+            int index = items.length - i - 1;
+            result[i] = items[index];
+        }
+        return result;
+    }
+
+    public MovieItem[] getAll() {
         MovieItem[] result = new MovieItem[items.length];
         // перебираем массив в прямом порядке
         // но кладём в результаты в обратном
@@ -66,4 +77,4 @@ public class MovieManager {
         items = tmp;
     }
 
-   }
+}
