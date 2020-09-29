@@ -1,12 +1,8 @@
 package ru.netology.manager;
 
 import org.junit.jupiter.api.BeforeEach;
-
 import org.junit.jupiter.api.Test;
-
 import ru.netology.domain.MovieItem;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class MovieManagerTestNonEmptyWithSetup {
 
@@ -35,7 +31,7 @@ public class MovieManagerTestNonEmptyWithSetup {
         assertArrayEquals(expected, actual);
     }
 
-        @Test
+    @Test
     public void shouldGetFilms() {
 
         MovieManager manager = new MovieManager(3);
@@ -47,6 +43,7 @@ public class MovieManagerTestNonEmptyWithSetup {
         MovieItem[] expected = new MovieItem[]{third, second, first};
         assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldGetFilmsIfOne() {
 
