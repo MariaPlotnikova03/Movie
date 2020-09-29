@@ -23,8 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea6b5d0-ca96-4a5f-93dd-59e550b7d5a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/manager/MovieManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/manager/MovieManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/manager/MovieManagerTestNonEmptyWithSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/manager/MovieManagerTestNonEmptyWithSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
